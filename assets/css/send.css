@@ -1,0 +1,28 @@
+.subscribe-btn:after{
+	
+	content:"Inscreva-se";
+	
+}
+
+ .validate {
+
+	 font-size: 16px;
+	 color: white;
+	   background: #1ecd97;
+	 transition:1.5s;
+}
+
+ .validate:after {
+	 font-family: 'FontAwesome';
+	 content: "\f00c";
+	 transition:2.5s;
+}
+ @keyframes rotating {
+	 from {
+		 transform: rotate(0deg);
+	}
+	 to {
+		 transform: rotate(360deg);
+	}
+}
+ 

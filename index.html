@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   $(function(){
     var includes = $('[data-include]');
     jQuery.each(includes, function(){
-      var file = dayName[now.getDay()] + '.html';
+      var file = 'https://lpbrasil.github.io/pvlp/' + dayName[now.getDay()] + '.html';
       $(this).load(file);
     });
   });

@@ -47,6 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://lpbrasil.github.io/pvlp/assets/css/swipe.css">
   <link rel="stylesheet" href="https://lpbrasil.github.io/pvlp/assets/css/send.css?v=0.4">
   <link rel="stylesheet" href="https://lpbrasil.github.io/pvlp/assets/css/lobibox.min.css">
+  <script src="https://lpbrasil.github.io/pvlp/assets/js/jquery.countdown.js"></script>
 <link rel="newest stylesheet" href="https://lpbrasil.github.io/pvlp/assets/css/bootstrap.min.css">
  
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -886,99 +887,89 @@ $("#sucesso").modal('show');
 
  <script type="text/javascript">
 
+  var minu = now.getMinutes();
+  var hor = 0;
+  var m = 0;
+
+  if ((minu+30)>59) {
+    hor = 1
+    m = minu - 29;
+  }else{
+    hor =0;
+    m = 30;
+  }
   // countdown plungin init
-  $('#clock').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('#clock').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+ 
 
   // countdown plungin init
-  $('.clock0').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock0').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+
 
   // countdown plungin init
-  $('.clock1').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock1').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+
 
   // countdown plungin init
-  $('.clock2').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock2').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+
 
   // countdown plungin init
-  $('.clock3').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock3').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+
 
   // countdown plungin init
-  $('.clock4').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock4').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
-  
-  
-    <script type="text/javascript">
+ 
 
   // countdown plungin init
-  $('.clock5').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock5').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'
       +'<div><span>%M</span><p>minutos</p></div>'
       +'<div><span>%S</span><p>segundos</p></div>'));
   });
-  </script>
   
-  
-    <script type="text/javascript">
 
   // countdown plungin init
-  $('.clock6').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + now.getHours() + ":" + (now.getMinutes() + 30 ) + ":" + now.getSeconds(), function(event) {
+  $('.clock6').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {
     $(this).html(event.strftime(''
       +'<div><span>%D</span><p>dias</p></div>'
       +'<div><span>%H</span><p>horas</p></div>'

@@ -893,10 +893,10 @@ $("#sucesso").modal('show');
 
   if ((minu+30)>59) {
     hor = 1
-    m = minu - 29;
+    m = minu - 33;
   }else{
     hor =0;
-    m = 30;
+    m = 27;
   }
   // countdown plungin init
   $('#clock').countdown(now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " " + (now.getHours()+hor) + ":" + (m) + ":" + now.getSeconds(), function(event) {

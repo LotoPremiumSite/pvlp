@@ -395,7 +395,7 @@ align-items: flex-start !important;}
                 </div>
                 <div id="texto1" class="collapse" aria-labelledby="headingOne" data-parent="#txt">
                   <div class="card-body">
-                    <p>Confiamos tanto no nosso sistema que, caso você não se satisfaça com os resultados em 7 dias, devolvemos <b>100% do seu dinheiro</b>, sem perguntas, <b>na hora!<br></b><b style="color:red"> Atenção está promoção estará disponível apenas até o dia 16/03/2020</b></p>
+                    <p>Confiamos tanto no nosso sistema que, caso você não se satisfaça com os resultados em 7 dias, devolvemos <b>100% do seu dinheiro</b>, sem perguntas, <b>na hora!<br></b><b style="color:red" id="atencao"> Atenção está promoção estará disponível apenas até o dia 16/03/2020</b></p>
                   </div>
                 </div>
               </div>
@@ -890,6 +890,8 @@ $("#sucesso").modal('show');
   var minu = now.getMinutes();
   var hor = 0;
   var m = 0;
+	 
+  document.getElementById("atencao").innerHTML="Atenção está promoção estará disponível apenas até o dia "+ now.getDate() + "/" + (("0" + (now.getMonth()+1)).slice(-4)) + "/" + now.getFullYear()
 
   if ((minu+30)>59) {
     hor = 1
